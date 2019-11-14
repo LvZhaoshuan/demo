@@ -19,3 +19,12 @@
 [11-14 16:14:29,770] DEBUG [http-nio-8080-exec-5] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
 [11-14 16:14:29,801] DEBUG [http-nio-8080-exec-5] selectById[159] - ==> Parameters: 1(Integer)
 [11-14 16:14:29,822] DEBUG [http-nio-8080-exec-5] selectById[159] - <==      Total: 1
+[11-14 16:59:23,437] DEBUG [http-nio-8080-exec-1] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 16:59:23,644] DEBUG [http-nio-8080-exec-1] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 16:59:23,800] DEBUG [http-nio-8080-exec-1] selectById[159] - <==      Total: 1
+[11-14 17:02:22,936] DEBUG [http-nio-8080-exec-2] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 17:02:22,969] DEBUG [http-nio-8080-exec-2] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 17:02:23,073] DEBUG [http-nio-8080-exec-2] selectById[159] - <==      Total: 1
+[11-14 17:08:12,275] DEBUG [http-nio-8080-exec-1] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 17:08:12,305] DEBUG [http-nio-8080-exec-1] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 17:08:12,339] DEBUG [http-nio-8080-exec-1] selectById[159] - <==      Total: 1

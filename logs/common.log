@@ -189,3 +189,148 @@ Caused by: org.springframework.core.convert.ConverterNotFoundException: No conve
 [11-14 16:15:30,095] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 10 ms
 [11-14 16:16:07,273] INFO [http-nio-8080-exec-5] HikariDataSource[110] - HikariPool-1 - Starting...
 [11-14 16:16:07,418] INFO [http-nio-8080-exec-5] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:34:50,142] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 16560 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:34:50,147] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:34:52,463] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 16:34:52,467] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 16:34:52,510] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+[11-14 16:34:53,219] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$6b5beedd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,792] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,890] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,894] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,899] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,901] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,944] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:55,539] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:34:55,555] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:34:55,556] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:34:55,557] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:34:55,759] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:34:55,760] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 5529 ms
+[11-14 16:34:58,051] WARN [main] AnnotationConfigServletWebServerApplicationContext[558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'demoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoServiceImpl': Unsatisfied dependency expressed through field 'redisClient'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisClient': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [com/example/demo/common/redis/RedisConfig.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
+[11-14 16:34:58,056] INFO [main] StandardService[173] - Stopping service [Tomcat]
+[11-14 16:34:58,207] INFO [main] ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[11-14 16:34:58,235] ERROR [main] LoggingFailureAnalysisReporter[40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
+
+    Property: spring.redis.timeout
+    Value: 3000 
+    Origin: class path resource [application.properties]:34:24
+    Reason: failed to convert java.lang.String to java.time.Duration
+
+Action:
+
+Update your application's configuration
+
+[11-14 16:42:54,074] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 1272 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:42:54,077] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:42:55,284] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 16:42:55,291] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 16:42:55,322] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[11-14 16:42:55,609] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$a92e1c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,680] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,690] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,691] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,691] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,692] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,697] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:56,930] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:42:56,940] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:42:56,941] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:42:56,941] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:42:57,055] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:42:57,055] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2931 ms
+[11-14 16:43:00,827] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 16:43:01,116] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 16:43:01,915] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 16:43:01,948] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 16:43:01,989] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 16:43:02,099] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 16:43:02,232] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 16:43:02,236] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.63 seconds (JVM running for 9.199)
+[11-14 16:52:58,693] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 16:52:59,528] INFO [javamelody] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:59:23,032] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 16:59:23,033] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 16:59:23,086] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 52 ms
+[11-14 16:59:25,215] INFO [http-nio-8080-exec-1] EpollProvider[68] - Starting without optional epoll library
+[11-14 16:59:25,228] INFO [http-nio-8080-exec-1] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:02:09,587] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 9108 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:02:09,605] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:02:11,742] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:02:11,747] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:02:11,786] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+[11-14 17:02:12,085] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$66d7a447] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,198] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,212] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,214] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,215] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,216] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,224] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:13,937] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:02:13,952] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:02:13,953] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:02:13,954] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:02:14,392] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:02:14,392] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4536 ms
+[11-14 17:02:17,888] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:02:18,004] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:02:18,351] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:02:18,390] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:02:18,438] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:02:18,585] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 17:02:18,626] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 17:02:18,630] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 11.185 seconds (JVM running for 12.744)
+[11-14 17:02:22,516] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 17:02:22,516] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 17:02:22,529] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 13 ms
+[11-14 17:02:22,609] INFO [http-nio-8080-exec-2] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:02:22,923] INFO [http-nio-8080-exec-2] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:02:30,028] INFO [http-nio-8080-exec-2] EpollProvider[68] - Starting without optional epoll library
+[11-14 17:02:30,031] INFO [http-nio-8080-exec-2] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:02:30,224] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 17:07:33,367] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 6432 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:07:33,372] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:07:35,270] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:07:35,273] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:07:35,363] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[11-14 17:07:35,790] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$e5adf274] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:35,914] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,032] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,055] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,061] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,063] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,074] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:37,327] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:07:37,339] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:07:37,340] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:07:37,340] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:07:37,490] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:07:37,490] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4056 ms
+[11-14 17:07:39,834] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:07:39,965] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:07:40,225] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:07:40,251] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:07:40,293] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:07:40,442] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 17:07:40,474] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 17:07:40,478] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.773 seconds (JVM running for 8.43)
+[11-14 17:08:11,837] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 17:08:11,837] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 17:08:11,845] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 7 ms
+[11-14 17:08:11,926] INFO [http-nio-8080-exec-1] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:08:12,265] INFO [http-nio-8080-exec-1] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:08:17,892] INFO [http-nio-8080-exec-1] EpollProvider[68] - Starting without optional epoll library
+[11-14 17:08:17,897] INFO [http-nio-8080-exec-1] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:09:01,627] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 17:09:01,793] INFO [SpringContextShutdownHook] HikariDataSource[350] - HikariPool-1 - Shutdown initiated...
+[11-14 17:09:01,827] INFO [SpringContextShutdownHook] HikariDataSource[352] - HikariPool-1 - Shutdown completed.

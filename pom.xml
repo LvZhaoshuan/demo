@@ -33,6 +33,7 @@
         <java.version>1.8</java.version>
         <demo.version>0.0.1-SNAPSHOT</demo.version>
         <swagger.version>2.8.0</swagger.version>
+        <jackson.version>2.9.4</jackson.version>
     </properties>
 
     <!-- 依赖管理：这里统一管理依赖的版本号 -->
@@ -82,6 +83,16 @@
                 <groupId>net.bull.javamelody</groupId>
                 <artifactId>javamelody-spring-boot-starter</artifactId>
                 <version>1.74.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

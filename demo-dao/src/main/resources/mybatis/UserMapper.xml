@@ -2,7 +2,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.dao.mapper.UserMapper">
-    <select id="selectById" resultType="com.example.demo.dao.entity.UserDO" parameterType="integer">
+    <!--实体映射-->
+    <resultMap id="BaseResultMap" type="com.example.demo.dao.entity.UserDO">
+        <!--自增ID-->
+        <result column="id" property="id"/>
+        <!--是否删除（0:未删除 1:已删除）-->
+        <result column="is_deleted" property="isDeleted"/>
+        <!--记录创建时间-->
+        <result column="create_time" property="createTime"/>
+        <!--记录修改时间-->
+        <result column="modify_time" property="modifyTime"/>
+        <!--创建人,0表示无创建人值-->
+        <result column="creator" property="creator"/>
+        <!--修改人,如果为0则表示纪录未修改-->
+        <result column="modifier" property="modifier"/>
+        <!--用户昵称-->
+        <result column="user_nick" property="userNick"/>
+        <!--用户头像-->
+        <result column="user_avatar" property="userAvatar"/>
+        <!--手机号-->
+        <result column="user_phone" property="userPhone"/>
+        <!--用户性别（1:男 2:女）-->
+        <result column="user_sex" property="userSex"/>
+        <!--用户类型（1:普通用户 2:测试用户）-->
+        <result column="user_type" property="userType"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap" parameterType="integer">
         SELECT
         *
         FROM `yb_user`
