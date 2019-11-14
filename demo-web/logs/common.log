@@ -1,0 +1,22 @@
+[11-14 15:37:17,827] INFO [main] LogbackTest[55] - Starting LogbackTest on LAPTOP-C66GIPPV with PID 5612 (started by 16561 in E:\github\demo\demo-web)
+[11-14 15:37:17,831] INFO [main] LogbackTest[651] - No active profile set, falling back to default profiles: default
+[11-14 15:37:23,803] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 15:37:25,232] INFO [main] LogbackTest[61] - Started LogbackTest in 8.726 seconds (JVM running for 10.826)
+[11-14 15:37:25,789] INFO [main] LogbackTest[23] - =====info=====
+[11-14 15:37:25,790] WARN [main] LogbackTest[24] - =====warn=====
+[11-14 15:37:25,790] ERROR [main] LogbackTest[25] - =====error=====
+[11-14 15:37:25,816] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 15:38:21,875] DEBUG [background-preinit] ResourceBundleMessageInterpolator[89] - Loaded expression factory via original TCCL
+[11-14 15:38:21,888] DEBUG [background-preinit] ValidatorFactoryImpl[578] - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[11-14 15:38:21,889] DEBUG [background-preinit] ValidatorFactoryImpl[579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[11-14 15:38:21,889] DEBUG [background-preinit] ValidatorFactoryImpl[580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[11-14 15:38:21,889] DEBUG [background-preinit] ValidatorFactoryImpl[581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[11-14 15:38:21,889] DEBUG [background-preinit] ValidatorFactoryImpl[582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[11-14 15:38:22,151] INFO [main] LogbackTest[55] - Starting LogbackTest on LAPTOP-C66GIPPV with PID 20368 (started by 16561 in E:\github\demo\demo-web)
+[11-14 15:38:22,155] INFO [main] LogbackTest[651] - No active profile set, falling back to default profiles: default
+[11-14 15:38:26,999] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 15:38:28,058] INFO [main] LogbackTest[61] - Started LogbackTest in 6.814 seconds (JVM running for 8.6)
+[11-14 15:38:28,617] INFO [main] LogbackTest[23] - =====info=====
+[11-14 15:38:28,617] WARN [main] LogbackTest[24] - =====warn=====
+[11-14 15:38:28,618] ERROR [main] LogbackTest[25] - =====error=====
+[11-14 15:38:28,649] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'

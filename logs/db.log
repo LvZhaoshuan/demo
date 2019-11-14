@@ -1,0 +1,21 @@
+[11-14 15:00:00,327] DEBUG [http-nio-8080-exec-1] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 15:00:00,350] DEBUG [http-nio-8080-exec-1] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 15:00:00,440] DEBUG [http-nio-8080-exec-1] selectById[159] - <==      Total: 1
+[31m[11-14 15:17:17,460][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-2][0;39m [1;35mselectById[159][0;39m - [36m==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[0;39m[31m[11-14 15:17:17,492][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-2][0;39m [1;35mselectById[159][0;39m - [36m==> Parameters: 1(Integer)
+[0;39m[31m[11-14 15:17:17,523][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-2][0;39m [1;35mselectById[159][0;39m - [36m<==      Total: 1
+[0;39m[31m[11-14 15:17:36,828][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-3][0;39m [1;35mselectById[159][0;39m - [36m==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[0;39m[31m[11-14 15:17:36,829][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-3][0;39m [1;35mselectById[159][0;39m - [36m==> Parameters: 1(Integer)
+[0;39m[31m[11-14 15:17:36,831][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-3][0;39m [1;35mselectById[159][0;39m - [36m<==      Total: 1
+[0;39m[31m[11-14 15:17:42,187][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-5][0;39m [1;35mselectById[159][0;39m - [36m==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[0;39m[31m[11-14 15:17:42,188][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-5][0;39m [1;35mselectById[159][0;39m - [36m==> Parameters: 1(Integer)
+[0;39m[31m[11-14 15:17:42,189][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-5][0;39m [1;35mselectById[159][0;39m - [36m<==      Total: 1
+[0;39m[31m[11-14 15:18:07,815][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-6][0;39m [1;35mselectById[159][0;39m - [36m==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[0;39m[31m[11-14 15:18:07,816][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-6][0;39m [1;35mselectById[159][0;39m - [36m==> Parameters: 1(Integer)
+[0;39m[31m[11-14 15:18:07,817][0;39m [32mDEBUG[0;39m [39m[http-nio-8080-exec-6][0;39m [1;35mselectById[159][0;39m - [36m<==      Total: 1
+[0;39m[11-14 16:09:52,078] DEBUG [http-nio-8080-exec-1] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 16:09:52,102] DEBUG [http-nio-8080-exec-1] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 16:09:52,167] DEBUG [http-nio-8080-exec-1] selectById[159] - <==      Total: 1
+[11-14 16:14:29,770] DEBUG [http-nio-8080-exec-5] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 16:14:29,801] DEBUG [http-nio-8080-exec-5] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 16:14:29,822] DEBUG [http-nio-8080-exec-5] selectById[159] - <==      Total: 1
