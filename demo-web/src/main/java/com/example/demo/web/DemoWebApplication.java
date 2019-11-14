@@ -1,5 +1,6 @@
 package com.example.demo.web;
 
+import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @MapperScan("com.example.demo.dao.mapper")
 @SpringBootApplication(scanBasePackages = "com.example.demo")
+@DubboComponentScan(basePackages = "com.example.demo.biz.service.impl.remote")
 public class DemoWebApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {

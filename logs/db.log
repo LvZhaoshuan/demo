@@ -28,3 +28,6 @@
 [11-14 17:08:12,275] DEBUG [http-nio-8080-exec-1] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
 [11-14 17:08:12,305] DEBUG [http-nio-8080-exec-1] selectById[159] - ==> Parameters: 1(Integer)
 [11-14 17:08:12,339] DEBUG [http-nio-8080-exec-1] selectById[159] - <==      Total: 1
+[11-14 18:01:11,374] DEBUG [http-nio-8080-exec-2] selectById[159] - ==>  Preparing: SELECT * FROM `yb_user` WHERE `id` = ? 
+[11-14 18:01:11,935] DEBUG [http-nio-8080-exec-2] selectById[159] - ==> Parameters: 1(Integer)
+[11-14 18:01:12,523] DEBUG [http-nio-8080-exec-2] selectById[159] - <==      Total: 1

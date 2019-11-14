@@ -26,6 +26,7 @@
         <module>demo-common</module>
         <module>demo-dao</module>
         <module>demo-web</module>
+        <module>demo-remote</module>
     </modules>
 
     <!-- 属性说明 -->
@@ -57,6 +58,11 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>demo-web</artifactId>
+                <version>${demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>demo-remote</artifactId>
                 <version>${demo.version}</version>
             </dependency>
             <dependency>
@@ -93,6 +99,11 @@
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>0.2.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
