@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author lvzhaoshuan
  * @date 2019/11/14
  */
-@Service
+//@Service
 public class RpcDemoServiceImpl implements RpcDemoService {
 
     @Autowired
@@ -20,7 +20,7 @@ public class RpcDemoServiceImpl implements RpcDemoService {
     @Override
     public DemoDTO test(DemoParam param) {
         DemoDTO demo = new DemoDTO();
-        demo.setStr(demoService.test());
+        //demo.setStr(demoService.test());
         return demo;
     }
 }
