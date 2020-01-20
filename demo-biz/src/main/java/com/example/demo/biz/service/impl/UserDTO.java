@@ -33,8 +33,8 @@ public class UserDTO {
 
     private String sex;
 
-    @NotBlank(message = "联系邮箱不能为空")
     @Email(message = "邮箱格式不对")
+    @NotBlank(message = "联系邮箱不能为空")
     private String email;
 
     private String password;

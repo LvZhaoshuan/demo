@@ -1,0 +1,984 @@
+[01-16 16:03:38,186] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-16 16:03:38,195] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-16 16:03:38,202] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-16 16:03:38,852] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 6088 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-16 16:03:38,855] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-16 16:03:40,693] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-16 16:03:40,694] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-16 16:03:40,876] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-16 16:03:40,882] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:03:40,958] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+[01-16 16:03:41,183] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:03:41,184] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:03:41,187] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:03:41,558] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$c43d75a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,775] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,804] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,805] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,806] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,807] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,818] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,923] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$7da5126a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:41,937] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:03:42,775] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-16 16:03:42,831] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-16 16:03:42,832] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-16 16:03:42,833] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-16 16:03:43,149] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-16 16:03:43,149] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4174 ms
+[01-16 16:03:46,661] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-16 16:03:47,008] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-16 16:03:47,308] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-16 16:03:47,670] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-16 16:03:47,714] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-16 16:03:47,785] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-16 16:03:48,115] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-16 16:03:48,169] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-16 16:03:48,176] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 10.918 seconds (JVM running for 19.556)
+[01-16 16:04:47,042] INFO [http-nio-8080-exec-2] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:04:47,047] INFO [http-nio-8080-exec-2] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+[01-16 16:04:47,076] WARN [http-nio-8080-exec-2] ClassPathScanningCandidateComponentProvider[166] - No MyBatis mapper was found in '[com.example.demo.dao.mapper]' package. Please check your configuration.
+[01-16 16:04:47,109] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-16 16:04:47,109] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-16 16:04:47,142] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 33 ms
+[01-16 16:04:47,206] WARN [http-nio-8080-exec-2] DefaultHandlerExceptionResolver[199] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[01-16 16:05:52,585] ERROR [http-nio-8080-exec-5] [dispatcherServlet][175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.demo.biz.service.impl.DemoServiceImpl.test(DemoServiceImpl.java:32)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$FastClassBySpringCGLIB$$77333cb2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:120)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$EnhancerBySpringCGLIB$$df69f475.test(<generated>)
+	at com.example.demo.web.controller.DemoController.test(DemoController.java:29)
+	at com.example.demo.web.controller.DemoController$$FastClassBySpringCGLIB$$b642eb3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.web.controller.DemoController$$EnhancerBySpringCGLIB$$bd322f05.test(<generated>)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 16:06:28,868] ERROR [http-nio-8080-exec-7] [dispatcherServlet][175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.demo.biz.service.impl.DemoServiceImpl.test(DemoServiceImpl.java:32)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$FastClassBySpringCGLIB$$77333cb2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:120)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$EnhancerBySpringCGLIB$$df69f475.test(<generated>)
+	at com.example.demo.web.controller.DemoController.test(DemoController.java:29)
+	at com.example.demo.web.controller.DemoController$$FastClassBySpringCGLIB$$b642eb3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.web.controller.DemoController$$EnhancerBySpringCGLIB$$bd322f05.test(<generated>)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 16:07:46,957] INFO [http-nio-8080-exec-1] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:07:46,964] INFO [http-nio-8080-exec-1] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+[01-16 16:07:47,016] WARN [http-nio-8080-exec-1] ClassPathScanningCandidateComponentProvider[166] - No MyBatis mapper was found in '[com.example.demo.dao.mapper]' package. Please check your configuration.
+[01-16 16:07:47,140] ERROR [http-nio-8080-exec-1] [dispatcherServlet][175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ConstraintViolationException: test.param.age: 年龄不得为空] with root cause
+javax.validation.ConstraintViolationException: test.param.age: 年龄不得为空
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$EnhancerBySpringCGLIB$$df69f475.test(<generated>)
+	at com.example.demo.web.controller.DemoController.test(DemoController.java:29)
+	at com.example.demo.web.controller.DemoController$$FastClassBySpringCGLIB$$b642eb3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.web.controller.DemoController$$EnhancerBySpringCGLIB$$bd322f05.test(<generated>)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 16:08:10,971] ERROR [http-nio-8080-exec-3] [dispatcherServlet][175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.example.demo.biz.service.impl.DemoServiceImpl.test(DemoServiceImpl.java:32)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$FastClassBySpringCGLIB$$77333cb2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:120)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.biz.service.impl.DemoServiceImpl$$EnhancerBySpringCGLIB$$df69f475.test(<generated>)
+	at com.example.demo.web.controller.DemoController.test(DemoController.java:29)
+	at com.example.demo.web.controller.DemoController$$FastClassBySpringCGLIB$$b642eb3d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.demo.web.controller.DemoController$$EnhancerBySpringCGLIB$$bd322f05.test(<generated>)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 16:08:34,274] INFO [DubboShutdownHook] AbstractConfig[81] -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:08:34,280] INFO [DubboShutdownHook] AbstractRegistryFactory[64] -  [DUBBO] Close all registries [], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:08:34,319] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[01-16 16:08:34,386] INFO [SpringContextShutdownHook] ReferenceAnnotationBeanPostProcessor[251] - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[01-16 16:08:41,764] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-16 16:08:41,769] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-16 16:08:41,775] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-16 16:08:42,036] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 3180 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-16 16:08:42,038] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-16 16:08:43,290] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-16 16:08:43,292] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-16 16:08:43,394] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-16 16:08:43,398] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:08:43,436] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+[01-16 16:08:43,585] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:08:43,586] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:08:43,589] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:08:43,873] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$b719d81b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,084] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,105] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,106] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,107] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,108] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,117] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,205] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$708174e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,222] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:08:44,796] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-16 16:08:44,815] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-16 16:08:44,816] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-16 16:08:44,817] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-16 16:08:45,044] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-16 16:08:45,044] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2908 ms
+[01-16 16:08:48,043] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-16 16:08:48,361] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-16 16:08:48,614] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-16 16:08:48,975] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-16 16:08:49,007] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-16 16:08:49,060] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-16 16:08:49,302] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-16 16:08:49,345] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-16 16:08:49,352] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.214 seconds (JVM running for 11.401)
+[01-16 16:09:28,335] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-16 16:09:28,336] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-16 16:09:28,367] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 31 ms
+[01-16 16:10:19,454] INFO [DubboShutdownHook] AbstractConfig[81] -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:10:19,456] INFO [DubboShutdownHook] AbstractRegistryFactory[64] -  [DUBBO] Close all registries [], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:10:19,461] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[01-16 16:10:19,493] INFO [SpringContextShutdownHook] ReferenceAnnotationBeanPostProcessor[251] - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[01-16 16:10:26,191] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-16 16:10:26,197] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-16 16:10:26,203] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-16 16:10:26,428] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 8828 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-16 16:10:26,429] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-16 16:10:27,969] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-16 16:10:27,970] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-16 16:10:28,075] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-16 16:10:28,079] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:10:28,116] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+[01-16 16:10:28,267] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:10:28,268] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:10:28,271] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:10:28,560] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$113fee83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,761] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,783] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,785] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,786] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,787] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,797] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,889] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$caa78b4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:28,904] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:10:29,463] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-16 16:10:29,481] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-16 16:10:29,482] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-16 16:10:29,483] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-16 16:10:29,666] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-16 16:10:29,667] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3074 ms
+[01-16 16:10:32,642] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-16 16:10:33,000] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-16 16:10:33,284] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-16 16:10:33,648] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-16 16:10:33,683] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-16 16:10:33,746] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-16 16:10:34,024] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-16 16:10:34,078] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-16 16:10:34,084] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.562 seconds (JVM running for 11.468)
+[01-16 16:18:22,314] WARN [http-nio-8080-exec-1] ClassPathScanningCandidateComponentProvider[166] - No MyBatis mapper was found in '[com.example.demo.dao.mapper]' package. Please check your configuration.
+[01-16 16:18:22,338] INFO [http-nio-8080-exec-1] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:18:22,342] INFO [http-nio-8080-exec-1] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+[01-16 16:18:22,374] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-16 16:18:22,374] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-16 16:18:22,408] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 33 ms
+[01-16 16:18:22,737] WARN [http-nio-8080-exec-1] DefaultHandlerExceptionResolver[199] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userParam' on field 'id': rejected value [null]; codes [NotNull.userParam.id,NotNull.id,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.id,id]; arguments []; default message [id]]; default message [ID不得为空]] ]
+[01-16 16:20:30,666] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 16:20:32,942] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.JavaInformations.buildDataBaseVersion(JavaInformations.java:398)
+	at net.bull.javamelody.internal.model.JavaInformations.<init>(JavaInformations.java:185)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:136)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.__newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45009)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45012)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 17 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 20 common frames omitted
+[01-16 16:20:32,961] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 16:20:34,986] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.UpdateChecker.getDatabasesUsed(UpdateChecker.java:270)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:149)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.__newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45009)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45012)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 19 common frames omitted
+[01-16 16:53:12,194] INFO [DubboShutdownHook] AbstractConfig[81] -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:53:12,196] INFO [DubboShutdownHook] AbstractRegistryFactory[64] -  [DUBBO] Close all registries [], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:53:12,204] WARN [SpringContextShutdownHook] ClassPathScanningCandidateComponentProvider[166] - No MyBatis mapper was found in '[com.example.demo.dao.mapper]' package. Please check your configuration.
+[01-16 16:53:12,235] INFO [SpringContextShutdownHook] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:53:12,240] INFO [SpringContextShutdownHook] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+[01-16 16:53:12,254] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[01-16 16:53:12,280] INFO [SpringContextShutdownHook] ReferenceAnnotationBeanPostProcessor[251] - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[01-16 16:58:28,650] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-16 16:58:28,654] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-16 16:58:28,660] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-16 16:58:28,746] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 14032 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-16 16:58:28,747] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-16 16:58:29,666] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-16 16:58:29,666] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-16 16:58:29,726] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-16 16:58:29,729] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 16:58:29,755] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[01-16 16:58:29,844] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:58:29,845] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:58:29,847] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 16:58:30,005] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$a30f25f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,205] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,238] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,240] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,241] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,243] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,251] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,341] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$5c76c2c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:30,349] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 16:58:31,250] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-16 16:58:31,261] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-16 16:58:31,262] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-16 16:58:31,262] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-16 16:58:31,465] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-16 16:58:31,466] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2666 ms
+[01-16 16:58:33,295] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-16 16:58:33,502] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-16 16:58:33,664] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-16 16:58:33,896] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-16 16:58:33,929] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-16 16:58:33,963] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-16 16:58:34,106] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-16 16:58:34,131] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-16 16:58:34,135] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 5.857 seconds (JVM running for 6.329)
+[01-16 16:58:37,609] INFO [http-nio-8080-exec-3] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-16 16:58:37,609] INFO [http-nio-8080-exec-3] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-16 16:58:37,632] INFO [http-nio-8080-exec-3] DispatcherServlet[547] - Completed initialization in 23 ms
+[01-16 16:58:37,770] ERROR [http-nio-8080-exec-3] GlobalExceptionHandler[45] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userParam' on field 'id': rejected value [null]; codes [NotNull.userParam.id,NotNull.id,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.id,id]; arguments []; default message [id]]; default message [ID不得为空]]
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userParam' on field 'id': rejected value [null]; codes [NotNull.userParam.id,NotNull.id,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.id,id]; arguments []; default message [id]]; default message [ID不得为空]]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 17:08:32,129] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 17:08:34,212] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.JavaInformations.buildDataBaseVersion(JavaInformations.java:398)
+	at net.bull.javamelody.internal.model.JavaInformations.<init>(JavaInformations.java:185)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:136)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 17 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 20 common frames omitted
+[01-16 17:08:34,223] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 17:08:36,229] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.UpdateChecker.getDatabasesUsed(UpdateChecker.java:270)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:149)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 19 common frames omitted
+[01-16 17:32:51,414] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-16 17:32:51,418] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-16 17:32:51,422] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-16 17:32:51,500] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 14080 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-16 17:32:51,500] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-16 17:32:52,581] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-16 17:32:52,582] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-16 17:32:52,710] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-16 17:32:52,713] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-16 17:32:52,749] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-16 17:32:52,886] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 17:32:52,887] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 17:32:52,890] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-16 17:32:53,058] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$59048c6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,180] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,197] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,198] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,199] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,200] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,205] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,269] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$126c2935] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:53,278] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-16 17:32:54,118] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-16 17:32:54,128] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-16 17:32:54,129] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-16 17:32:54,130] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-16 17:32:54,232] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-16 17:32:54,233] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2685 ms
+[01-16 17:32:56,239] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-16 17:32:56,429] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-16 17:32:56,580] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-16 17:32:56,799] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-16 17:32:56,818] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-16 17:32:56,850] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-16 17:32:56,993] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-16 17:32:57,016] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-16 17:32:57,019] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 5.973 seconds (JVM running for 6.53)
+[01-16 17:35:47,209] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-16 17:35:47,209] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-16 17:35:47,230] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 21 ms
+[01-16 17:35:47,395] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userParam' on field 'email': rejected value [null]; codes [NotBlank.userParam.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userParam' on field 'mobile': rejected value [null]; codes [NotBlank.userParam.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userParam' on field 'username': rejected value [null]; codes [NotBlank.userParam.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userParam' on field 'userId': rejected value [null]; codes [NotNull.userParam.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]]
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userParam' on field 'email': rejected value [null]; codes [NotBlank.userParam.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userParam' on field 'mobile': rejected value [null]; codes [NotBlank.userParam.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userParam' on field 'username': rejected value [null]; codes [NotBlank.userParam.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userParam' on field 'userId': rejected value [null]; codes [NotNull.userParam.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userParam.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:239)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:215)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[01-16 17:42:54,979] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 17:42:57,064] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.JavaInformations.buildDataBaseVersion(JavaInformations.java:398)
+	at net.bull.javamelody.internal.model.JavaInformations.<init>(JavaInformations.java:185)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:136)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 17 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 20 common frames omitted
+[01-16 17:42:57,075] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[01-16 17:42:59,093] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at net.bull.javamelody.internal.model.UpdateChecker.getDatabasesUsed(UpdateChecker.java:270)
+	at net.bull.javamelody.internal.model.UpdateChecker.getAnonymousData(UpdateChecker.java:149)
+	at net.bull.javamelody.internal.model.UpdateChecker.checkForUpdate(UpdateChecker.java:109)
+	at net.bull.javamelody.internal.model.UpdateChecker$1.run(UpdateChecker.java:83)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 19 common frames omitted

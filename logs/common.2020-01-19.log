@@ -1,3 +1,90 @@
+[01-19 17:25:54,471] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:25:54,573] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:25:54,631] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:25:54,838] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 9592 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:25:54,840] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:25:56,929] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:25:56,930] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:25:57,142] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:25:57,146] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:25:57,201] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[01-19 17:25:57,371] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:25:57,372] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:25:57,374] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:25:57,542] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$66da54e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,688] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,726] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,727] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,728] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,729] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,736] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,809] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$2041f1b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:57,817] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:25:59,275] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:25:59,290] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:25:59,291] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:25:59,291] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:25:59,449] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:25:59,450] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4497 ms
+[01-19 17:26:02,167] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:26:02,391] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:26:02,606] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:26:02,916] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:26:02,955] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:26:02,994] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:26:03,203] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:26:03,230] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:26:03,233] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 9.618 seconds (JVM running for 10.651)
+[01-19 17:26:20,022] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:26:20,026] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:26:20,032] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:26:20,142] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 5808 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:26:20,143] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:26:22,346] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:26:22,347] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:26:22,458] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:26:22,461] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:26:22,504] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:26:22,697] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:26:22,697] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:26:22,699] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:26:22,862] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$876ca7ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:22,986] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,001] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,004] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,005] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,005] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,010] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,072] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$40d444b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,081] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:26:23,980] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:26:23,994] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:26:23,994] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:26:23,995] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:26:24,112] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:26:24,112] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3913 ms
+[01-19 17:26:26,257] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:26:26,498] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:26:26,693] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:26:26,962] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:26:26,989] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:26:27,032] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:26:27,223] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:26:27,264] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:26:27,268] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.934 seconds (JVM running for 9.196)
+[01-19 17:26:44,434] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:26:44,434] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:26:44,462] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 27 ms
 [01-19 17:26:44,759] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -106,6 +193,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:27:47,055] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:27:47,059] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:27:47,063] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:27:47,142] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 4208 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:27:47,143] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:27:48,245] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:27:48,246] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:27:48,320] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:27:48,324] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:27:48,357] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:27:48,470] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:27:48,470] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:27:48,473] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:27:48,655] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$85c880e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,835] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,869] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,880] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,881] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,882] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:48,890] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:49,145] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$3f301dab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:49,155] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:27:50,386] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:27:50,397] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:27:50,398] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:27:50,399] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:27:50,524] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:27:50,524] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3325 ms
+[01-19 17:27:52,619] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:27:52,987] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:27:53,304] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:27:53,630] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:27:53,655] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:27:53,702] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:27:53,876] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:27:53,902] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:27:53,906] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.315 seconds (JVM running for 7.984)
+[01-19 17:27:58,769] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:27:58,770] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:27:58,798] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 28 ms
 [01-19 17:27:59,043] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[62] - test.param.username: 用户名不能为空, test.param.mobile: 手机号不能为空, test.param.email: 联系邮箱不能为空
 javax.validation.ConstraintViolationException: test.param.username: 用户名不能为空, test.param.mobile: 手机号不能为空, test.param.email: 联系邮箱不能为空
 	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117)
@@ -178,6 +310,51 @@ javax.validation.ConstraintViolationException: test.param.username: 用户名不
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:29:42,769] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:29:42,774] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:29:42,778] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:29:42,872] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 6360 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:29:42,873] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:29:44,747] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:29:44,749] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:29:44,911] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:29:44,925] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:29:44,969] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[01-19 17:29:45,109] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:29:45,109] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:29:45,111] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:29:45,344] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$33b80040] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,560] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,624] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,626] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,627] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,628] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,637] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,767] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$ed1f9d0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:45,777] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:29:46,991] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:29:47,003] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:29:47,003] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:29:47,003] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:29:47,119] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:29:47,119] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4184 ms
+[01-19 17:29:49,546] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:29:49,780] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:29:49,955] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:29:50,227] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:29:50,249] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:29:50,285] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:29:50,447] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:29:50,474] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:29:50,478] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.159 seconds (JVM running for 8.733)
+[01-19 17:30:03,368] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:30:03,368] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:30:03,392] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 23 ms
 [01-19 17:30:03,615] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[62] - test.param.mobile: 手机号不能为空, test.param.email: 联系邮箱不能为空, test.param.username: 用户名不能为空
 javax.validation.ConstraintViolationException: test.param.mobile: 手机号不能为空, test.param.email: 联系邮箱不能为空, test.param.username: 用户名不能为空
 	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117)
@@ -376,6 +553,51 @@ javax.validation.ConstraintViolationException: test.param.username: 用户名不
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:30:56,070] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:30:56,074] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:30:56,078] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:30:56,157] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 14024 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:30:56,158] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:30:57,514] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:30:57,515] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:30:57,582] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:30:57,586] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:30:57,623] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:30:57,809] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:30:57,809] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:30:57,811] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:30:58,030] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$f2fccd3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,265] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,295] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,297] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,298] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,299] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,304] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,366] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$ac646a05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:58,374] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:30:59,709] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:30:59,729] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:30:59,729] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:30:59,729] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:30:59,899] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:30:59,900] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3687 ms
+[01-19 17:31:01,911] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:31:02,136] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:31:02,313] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:31:02,567] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:31:02,588] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:31:02,626] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:31:02,804] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:31:02,831] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:31:02,835] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.218 seconds (JVM running for 7.929)
+[01-19 17:31:07,105] INFO [http-nio-8080-exec-3] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:31:07,105] INFO [http-nio-8080-exec-3] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:31:07,126] INFO [http-nio-8080-exec-3] DispatcherServlet[547] - Completed initialization in 21 ms
 [01-19 17:31:07,304] ERROR [http-nio-8080-exec-3] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -538,6 +760,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:31:27,340] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:31:27,346] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:31:27,350] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:31:27,432] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 8996 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:31:27,435] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:31:28,507] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:31:28,508] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:31:28,575] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:31:28,577] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:31:28,607] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[01-19 17:31:28,707] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:31:28,708] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:31:28,711] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:31:28,894] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$f429116a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,085] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,103] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,104] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,106] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,109] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,132] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,246] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$ad90ae34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:29,266] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:31:30,346] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:31:30,358] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:31:30,359] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:31:30,362] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:31:30,491] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:31:30,491] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3006 ms
+[01-19 17:31:32,680] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:31:32,985] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:31:33,170] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:31:33,427] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:31:33,448] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:31:33,485] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:31:33,660] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:31:33,687] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:31:33,690] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.779 seconds (JVM running for 7.343)
+[01-19 17:32:43,330] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:32:43,331] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:32:43,355] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 24 ms
 [01-19 17:32:43,515] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -664,6 +931,51 @@ javax.validation.ConstraintViolationException: test.param.username: 用户名不
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:33:10,492] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:33:10,497] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:33:10,501] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:33:10,580] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 13196 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:33:10,581] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:33:11,997] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:33:11,997] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:33:12,069] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:33:12,072] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:33:12,107] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[01-19 17:33:12,212] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:33:12,212] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:33:12,215] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:33:12,379] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$3eadb8e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,492] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,507] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,508] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,509] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,510] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,515] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,574] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$f81555b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:12,582] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:33:13,389] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:33:13,400] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:33:13,400] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:33:13,401] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:33:13,519] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:33:13,519] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2885 ms
+[01-19 17:33:15,519] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:33:15,748] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:33:15,924] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:33:16,181] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:33:16,203] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:33:16,240] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:33:16,408] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:33:16,435] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:33:16,438] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.355 seconds (JVM running for 6.947)
+[01-19 17:33:23,358] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:33:23,359] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:33:23,383] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 24 ms
 [01-19 17:33:23,578] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -772,6 +1084,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:36:02,731] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:36:02,735] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:36:02,739] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:36:02,818] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 10664 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:36:02,819] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:36:04,434] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:36:04,437] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:36:04,632] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:36:04,635] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:36:04,682] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[01-19 17:36:04,803] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:36:04,803] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:36:04,810] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:36:05,040] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$3eadb8e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,147] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,163] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,164] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,165] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,165] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,171] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,231] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$f81555b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:05,238] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:36:06,062] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:36:06,074] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:36:06,075] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:36:06,075] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:36:06,188] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:36:06,188] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3309 ms
+[01-19 17:36:08,275] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:36:08,497] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:36:08,695] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:36:08,941] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:36:08,962] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:36:08,997] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:36:09,233] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:36:09,258] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:36:09,262] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.961 seconds (JVM running for 7.569)
+[01-19 17:36:10,540] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:36:10,540] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:36:10,573] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 32 ms
 [01-19 17:36:10,873] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[62] - test.param.username: 用户名不能为空, test.param.email: 联系邮箱不能为空, test.param.mobile: 手机号不能为空
 javax.validation.ConstraintViolationException: test.param.username: 用户名不能为空, test.param.email: 联系邮箱不能为空, test.param.mobile: 手机号不能为空
 	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117)
@@ -844,6 +1201,51 @@ javax.validation.ConstraintViolationException: test.param.username: 用户名不
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:38:24,792] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:38:24,795] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:38:24,800] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:38:24,883] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 12540 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:38:24,884] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:38:25,894] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:38:25,895] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:38:25,961] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:38:25,963] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:38:25,994] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[01-19 17:38:26,100] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:38:26,100] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:38:26,103] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:38:26,289] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$97a025df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,473] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,507] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,515] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,518] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,522] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,542] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,689] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$5107c2a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:26,704] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:38:27,871] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:38:27,883] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:38:27,884] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:38:27,884] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:38:28,004] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:38:28,004] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3069 ms
+[01-19 17:38:30,014] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:38:30,247] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:38:30,428] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:38:30,687] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:38:30,709] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:38:30,751] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:38:30,919] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:38:30,946] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:38:30,950] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.586 seconds (JVM running for 7.135)
+[01-19 17:38:33,851] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:38:33,851] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:38:33,882] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 31 ms
 [01-19 17:38:34,115] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[62] - test.param.username: 用户名不能为空, test.param.email: 联系邮箱不能为空, test.param.mobile: 手机号不能为空
 javax.validation.ConstraintViolationException: test.param.username: 用户名不能为空, test.param.email: 联系邮箱不能为空, test.param.mobile: 手机号不能为空
 	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:117)
@@ -916,6 +1318,7 @@ javax.validation.ConstraintViolationException: test.param.username: 用户名不
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:48:28,822] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 17:48:30,947] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -968,6 +1371,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 20 common frames omitted
+[01-19 17:48:31,063] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 17:48:33,080] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -1019,6 +1423,51 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 19 common frames omitted
+[01-19 17:51:19,232] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:51:19,236] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:51:19,241] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:51:19,325] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 10024 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:51:19,326] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:51:20,413] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:51:20,413] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:51:20,485] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:51:20,487] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:51:20,530] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+[01-19 17:51:20,718] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:51:20,718] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:51:20,721] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:51:20,949] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$1ed78018] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,291] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,325] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,326] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,327] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,330] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,337] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,415] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$d83f1ce2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:21,425] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:51:22,858] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:51:22,871] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:51:22,872] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:51:22,872] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:51:23,006] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:51:23,006] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3619 ms
+[01-19 17:51:25,070] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:51:25,290] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:51:25,478] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:51:25,755] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:51:25,777] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:51:25,811] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:51:26,005] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:51:26,035] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:51:26,040] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.253 seconds (JVM running for 7.83)
+[01-19 17:51:28,380] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:51:28,381] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:51:28,404] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 23 ms
 [01-19 17:51:28,589] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -1505,6 +1954,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:52:24,258] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:52:24,264] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:52:24,269] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:52:24,351] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 8504 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:52:24,352] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:52:25,873] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:52:25,874] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:52:25,974] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:52:25,977] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:52:26,050] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+[01-19 17:52:26,379] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:52:26,379] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:52:26,383] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:52:26,609] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$2f1b7bd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,735] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,752] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,753] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,754] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,755] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,763] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,842] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$e883189f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:26,853] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:52:27,961] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:52:27,973] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:52:27,973] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:52:27,974] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:52:28,132] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:52:28,132] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3721 ms
+[01-19 17:52:30,863] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:52:31,082] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:52:31,273] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:52:31,531] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:52:31,554] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:52:31,598] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:52:31,766] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:52:31,803] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:52:31,807] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.973 seconds (JVM running for 8.553)
+[01-19 17:52:39,114] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:52:39,114] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:52:39,140] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 26 ms
 [01-19 17:52:39,329] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 3 errors: [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -2207,6 +2701,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:55:04,673] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:55:04,678] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:55:04,681] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:55:04,764] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 14992 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:55:04,766] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:55:05,813] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:55:05,814] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:55:05,884] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:55:05,886] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:55:05,918] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:55:06,025] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:06,026] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:06,029] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:06,207] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$ab99d174] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,404] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,427] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,428] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,429] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,429] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,437] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,594] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$65016e3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:06,603] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:07,624] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:55:07,635] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:55:07,636] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:55:07,636] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:55:07,757] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:55:07,757] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2937 ms
+[01-19 17:55:09,887] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:55:10,111] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:55:10,308] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:55:10,563] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:55:10,587] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:55:10,623] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:55:10,861] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:55:10,895] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:55:10,900] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.666 seconds (JVM running for 7.331)
+[01-19 17:55:12,349] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:55:12,349] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:55:12,374] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 24 ms
 [01-19 17:55:12,563] ERROR [http-nio-8080-exec-2] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO) with 4 errors: [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotBlank.userDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [用户名不能为空]] [Field error in object 'userDTO' on field 'email': rejected value [null]; codes [NotBlank.userDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email]]; default message [联系邮箱不能为空]] [Field error in object 'userDTO' on field 'mobile': rejected value [null]; codes [NotBlank.userDTO.mobile,NotBlank.mobile,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.mobile,mobile]; arguments []; default message [mobile]]; default message [手机号不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -2531,6 +3070,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:55:40,644] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:55:40,648] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:55:40,652] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:55:40,735] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 12824 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:55:40,736] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:55:41,832] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:55:41,833] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:55:41,900] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:55:41,903] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:55:41,934] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:55:42,044] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:42,045] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:42,048] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:55:42,213] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$5c04d97f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,410] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,430] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,437] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,438] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,439] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,447] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,593] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$156c7649] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:42,604] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:55:43,677] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:55:43,689] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:55:43,690] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:55:43,690] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:55:43,812] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:55:43,812] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3019 ms
+[01-19 17:55:45,875] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:55:46,163] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:55:46,353] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:55:46,598] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:55:46,632] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:55:46,669] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:55:46,841] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:55:46,875] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:55:46,879] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.669 seconds (JVM running for 7.259)
+[01-19 17:55:52,262] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:55:52,262] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:55:52,287] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 25 ms
 [01-19 17:55:52,449] ERROR [http-nio-8080-exec-1] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -3467,6 +4051,51 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 17:59:16,747] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 17:59:16,751] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 17:59:16,755] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 17:59:16,837] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 1192 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 17:59:16,838] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 17:59:17,893] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 17:59:17,894] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 17:59:17,966] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 17:59:17,969] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 17:59:17,999] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 17:59:18,106] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:59:18,106] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:59:18,108] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 17:59:18,292] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$b025af7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,566] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,596] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,597] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,598] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,598] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,605] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,688] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$c469f7c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:18,700] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 17:59:19,947] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 17:59:19,959] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 17:59:19,960] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 17:59:19,960] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 17:59:20,077] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 17:59:20,078] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3183 ms
+[01-19 17:59:22,100] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 17:59:22,333] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 17:59:22,510] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 17:59:22,761] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 17:59:22,785] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 17:59:22,833] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 17:59:23,005] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 17:59:23,030] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 17:59:23,034] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.725 seconds (JVM running for 7.29)
+[01-19 17:59:25,359] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 17:59:25,359] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 17:59:25,384] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 25 ms
 [01-19 17:59:29,796] ERROR [http-nio-8080-exec-3] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -3629,6 +4258,7 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 18:09:20,826] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 18:09:22,924] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -3681,6 +4311,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 20 common frames omitted
+[01-19 18:09:22,933] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 18:09:24,948] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -3732,6 +4363,51 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 19 common frames omitted
+[01-19 18:12:25,918] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[01-19 18:12:25,923] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[01-19 18:12:25,927] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo}
+[01-19 18:12:26,014] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 10096 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[01-19 18:12:26,015] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[01-19 18:12:27,602] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[01-19 18:12:27,603] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[01-19 18:12:27,677] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[01-19 18:12:27,680] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[01-19 18:12:27,721] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[01-19 18:12:27,908] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 18:12:27,909] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 18:12:27,911] WARN [main] ServiceAnnotationBeanPostProcessor[155] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.90
+[01-19 18:12:28,078] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$5ec9e345] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,228] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,246] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,247] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,251] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,252] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,258] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,325] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$1831800f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:28,333] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[01-19 18:12:29,142] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[01-19 18:12:29,156] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[01-19 18:12:29,156] INFO [main] StandardService[173] - Starting service [Tomcat]
+[01-19 18:12:29,157] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[01-19 18:12:29,283] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[01-19 18:12:29,283] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3214 ms
+[01-19 18:12:31,397] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[01-19 18:12:31,626] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[01-19 18:12:31,815] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[01-19 18:12:32,101] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[01-19 18:12:32,124] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[01-19 18:12:32,162] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[01-19 18:12:32,331] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[01-19 18:12:32,359] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[01-19 18:12:32,364] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 6.885 seconds (JVM running for 7.47)
+[01-19 18:12:40,900] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[01-19 18:12:40,901] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[01-19 18:12:40,927] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 26 ms
 [01-19 18:12:47,042] ERROR [http-nio-8080-exec-3] GlobalExceptionHandler[44] - Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.web.controller.DemoController.test(com.example.demo.biz.service.impl.UserDTO): [Field error in object 'userDTO' on field 'userId': rejected value [null]; codes [NotNull.userDTO.userId,NotNull.userId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.userId,userId]; arguments []; default message [userId]]; default message [用户id不能为空]] 
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
@@ -3786,6 +4462,7 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[01-19 18:22:30,064] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 18:22:32,147] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -3838,6 +4515,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 20 common frames omitted
+[01-19 18:22:32,158] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
 [01-19 18:22:34,173] ERROR [javamelody] HikariPool[595] - HikariPool-1 - Exception during pool initialization.
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 

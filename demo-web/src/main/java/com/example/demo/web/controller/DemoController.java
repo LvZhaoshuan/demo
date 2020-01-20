@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.groups.Default;
+
 /**
  * @author lvzhaoshuan
  * @date 2019/11/13
@@ -27,7 +29,7 @@ public class DemoController {
 
     @ApiOperation("测试")
     @PostMapping("test")
-    public String test(@RequestBody @Validated(Update.class) UserDTO param) {
+    public String test(@RequestBody @Validated({Update.class}) UserDTO param) {
         return demoService.test(param);
     }
 

@@ -1,0 +1,1255 @@
+[11-14 14:58:58,332] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 18856 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 14:58:58,342] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 14:59:00,382] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 14:59:00,392] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 14:59:00,393] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 14:59:00,393] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 14:59:00,509] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 14:59:00,510] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2128 ms
+[11-14 14:59:00,872] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 14:59:01,010] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 14:59:01,035] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 14:59:01,038] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 3.173 seconds (JVM running for 3.742)
+[11-14 15:00:00,006] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 15:00:00,007] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 15:00:00,016] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 8 ms
+[11-14 15:00:00,067] INFO [http-nio-8080-exec-1] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 15:00:00,319] INFO [http-nio-8080-exec-1] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 15:01:25,010] ERROR [main] SpringApplication[826] - Application run failed
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:364)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:324)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:398)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:338)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:18)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:415)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:570)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:513)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:415)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:376)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:320)
+	... 19 common frames omitted
+[11-14 15:01:29,509] ERROR [main] SpringApplication[826] - Application run failed
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:364)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:324)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:398)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:338)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:289)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:18)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:415)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:570)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:513)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:415)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:376)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:320)
+	... 19 common frames omitted
+[31m[11-14 15:16:57,221][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mDemoWebApplication[55][0;39m - [36mStarting DemoWebApplication on LAPTOP-C66GIPPV with PID 1984 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[0;39m[31m[11-14 15:16:57,225][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mDemoWebApplication[651][0;39m - [36mNo active profile set, falling back to default profiles: default
+[0;39m[31m[11-14 15:16:59,642][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mTomcatWebServer[92][0;39m - [36mTomcat initialized with port(s): 8080 (http)
+[0;39m[31m[11-14 15:16:59,655][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mHttp11NioProtocol[173][0;39m - [36mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[31m[11-14 15:16:59,656][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mStandardService[173][0;39m - [36mStarting service [Tomcat]
+[0;39m[31m[11-14 15:16:59,656][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mStandardEngine[173][0;39m - [36mStarting Servlet engine: [Apache Tomcat/9.0.27]
+[0;39m[31m[11-14 15:16:59,787][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35m[/][173][0;39m - [36mInitializing Spring embedded WebApplicationContext
+[0;39m[31m[11-14 15:16:59,787][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mContextLoader[284][0;39m - [36mRoot WebApplicationContext: initialization completed in 2503 ms
+[0;39m[31m[11-14 15:17:00,234][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mThreadPoolTaskExecutor[171][0;39m - [36mInitializing ExecutorService 'applicationTaskExecutor'
+[0;39m[31m[11-14 15:17:00,415][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mHttp11NioProtocol[173][0;39m - [36mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[31m[11-14 15:17:00,454][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mTomcatWebServer[204][0;39m - [36mTomcat started on port(s): 8080 (http) with context path ''
+[0;39m[31m[11-14 15:17:00,458][0;39m [32mINFO[0;39m [34m[main][0;39m [1;35mDemoWebApplication[61][0;39m - [36mStarted DemoWebApplication in 3.835 seconds (JVM running for 4.505)
+[0;39m[31m[11-14 15:17:17,092][0;39m [32mINFO[0;39m [34m[http-nio-8080-exec-2][0;39m [1;35m[/][173][0;39m - [36mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m[11-14 15:17:17,093][0;39m [32mINFO[0;39m [34m[http-nio-8080-exec-2][0;39m [1;35mDispatcherServlet[525][0;39m - [36mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m[11-14 15:17:17,103][0;39m [32mINFO[0;39m [34m[http-nio-8080-exec-2][0;39m [1;35mDispatcherServlet[547][0;39m - [36mCompleted initialization in 10 ms
+[0;39m[31m[11-14 15:17:17,244][0;39m [32mINFO[0;39m [34m[http-nio-8080-exec-2][0;39m [1;35mHikariDataSource[110][0;39m - [36mHikariPool-1 - Starting...
+[0;39m[31m[11-14 15:17:17,445][0;39m [32mINFO[0;39m [34m[http-nio-8080-exec-2][0;39m [1;35mHikariDataSource[123][0;39m - [36mHikariPool-1 - Start completed.
+[0;39m[31m[11-14 15:18:19,596][0;39m [32mINFO[0;39m [34m[SpringContextShutdownHook][0;39m [1;35mThreadPoolTaskExecutor[208][0;39m - [36mShutting down ExecutorService 'applicationTaskExecutor'
+[0;39m[31m[11-14 15:18:19,597][0;39m [32mINFO[0;39m [34m[SpringContextShutdownHook][0;39m [1;35mHikariDataSource[350][0;39m - [36mHikariPool-1 - Shutdown initiated...
+[0;39m[31m[11-14 15:18:19,610][0;39m [32mINFO[0;39m [34m[SpringContextShutdownHook][0;39m [1;35mHikariDataSource[352][0;39m - [36mHikariPool-1 - Shutdown completed.
+[0;39m[11-14 16:07:55,520] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 5508 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:07:55,523] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:07:58,140] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:07:59,985] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:08:00,004] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:08:00,008] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:08:00,010] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:08:00,177] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:08:00,178] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4573 ms
+[11-14 16:08:01,051] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 16:08:01,203] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 16:08:01,401] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 16:08:01,440] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 16:08:01,568] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 16:08:01,717] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 16:08:01,753] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 16:08:01,764] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.084 seconds (JVM running for 7.907)
+[11-14 16:08:07,214] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 16:08:07,214] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 16:08:07,235] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 21 ms
+[11-14 16:09:51,571] INFO [http-nio-8080-exec-1] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 16:09:52,070] INFO [http-nio-8080-exec-1] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:13:06,751] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 1324 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:13:06,757] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:13:08,889] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$92c62d00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,132] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,177] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,180] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,181] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,182] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:09,193] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:13:10,798] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:13:10,813] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:13:10,814] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:13:10,814] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:13:10,983] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:13:10,987] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4160 ms
+[11-14 16:13:14,301] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 16:13:14,437] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 16:13:14,611] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 16:13:14,639] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 16:13:14,678] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 16:13:14,809] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 16:13:14,846] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 16:13:14,854] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.931 seconds (JVM running for 9.883)
+[11-14 16:13:17,088] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 16:13:17,088] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 16:13:17,101] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 13 ms
+[11-14 16:13:17,131] INFO [http-nio-8080-exec-1] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 16:13:17,288] INFO [http-nio-8080-exec-1] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:15:15,450] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 6988 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:15:15,453] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:15:16,709] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$c2a4f802] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,792] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,803] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,804] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,805] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,806] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:16,812] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:15:17,902] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:15:17,911] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:15:17,913] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:15:17,913] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:15:18,019] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:15:18,020] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2508 ms
+[11-14 16:15:19,818] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 16:15:19,906] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 16:15:20,025] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 16:15:20,042] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 16:15:20,073] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 16:15:20,156] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 16:15:20,177] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 16:15:20,180] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 5.289 seconds (JVM running for 5.779)
+[11-14 16:15:30,085] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 16:15:30,085] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 16:15:30,095] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 10 ms
+[11-14 16:16:07,273] INFO [http-nio-8080-exec-5] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 16:16:07,418] INFO [http-nio-8080-exec-5] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:34:50,142] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 16560 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:34:50,147] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:34:52,463] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 16:34:52,467] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 16:34:52,510] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+[11-14 16:34:53,219] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$6b5beedd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,792] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,890] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,894] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,899] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,901] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:53,944] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:34:55,539] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:34:55,555] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:34:55,556] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:34:55,557] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:34:55,759] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:34:55,760] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 5529 ms
+[11-14 16:34:58,051] WARN [main] AnnotationConfigServletWebServerApplicationContext[558] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'demoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoServiceImpl': Unsatisfied dependency expressed through field 'redisClient'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisClient': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [com/example/demo/common/redis/RedisConfig.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
+[11-14 16:34:58,056] INFO [main] StandardService[173] - Stopping service [Tomcat]
+[11-14 16:34:58,207] INFO [main] ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[11-14 16:34:58,235] ERROR [main] LoggingFailureAnalysisReporter[40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
+
+    Property: spring.redis.timeout
+    Value: 3000 
+    Origin: class path resource [application.properties]:34:24
+    Reason: failed to convert java.lang.String to java.time.Duration
+
+Action:
+
+Update your application's configuration
+
+[11-14 16:42:54,074] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 1272 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 16:42:54,077] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 16:42:55,284] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 16:42:55,291] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 16:42:55,322] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[11-14 16:42:55,609] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$a92e1c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,680] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,690] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,691] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,691] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,692] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:55,697] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 16:42:56,930] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 16:42:56,940] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 16:42:56,941] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 16:42:56,941] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 16:42:57,055] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 16:42:57,055] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 2931 ms
+[11-14 16:43:00,827] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 16:43:01,116] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 16:43:01,915] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 16:43:01,948] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 16:43:01,989] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 16:43:02,099] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 16:43:02,232] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 16:43:02,236] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 8.63 seconds (JVM running for 9.199)
+[11-14 16:52:58,693] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 16:52:59,528] INFO [javamelody] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 16:59:23,032] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 16:59:23,033] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 16:59:23,086] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 52 ms
+[11-14 16:59:25,215] INFO [http-nio-8080-exec-1] EpollProvider[68] - Starting without optional epoll library
+[11-14 16:59:25,228] INFO [http-nio-8080-exec-1] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:02:09,587] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 9108 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:02:09,605] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:02:11,742] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:02:11,747] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:02:11,786] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+[11-14 17:02:12,085] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$66d7a447] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,198] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,212] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,214] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,215] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,216] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:12,224] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:02:13,937] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:02:13,952] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:02:13,953] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:02:13,954] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:02:14,392] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:02:14,392] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4536 ms
+[11-14 17:02:17,888] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:02:18,004] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:02:18,351] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:02:18,390] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:02:18,438] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:02:18,585] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 17:02:18,626] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 17:02:18,630] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 11.185 seconds (JVM running for 12.744)
+[11-14 17:02:22,516] INFO [http-nio-8080-exec-2] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 17:02:22,516] INFO [http-nio-8080-exec-2] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 17:02:22,529] INFO [http-nio-8080-exec-2] DispatcherServlet[547] - Completed initialization in 13 ms
+[11-14 17:02:22,609] INFO [http-nio-8080-exec-2] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:02:22,923] INFO [http-nio-8080-exec-2] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:02:30,028] INFO [http-nio-8080-exec-2] EpollProvider[68] - Starting without optional epoll library
+[11-14 17:02:30,031] INFO [http-nio-8080-exec-2] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:02:30,224] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 17:07:33,367] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 6432 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:07:33,372] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:07:35,270] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:07:35,273] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:07:35,363] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[11-14 17:07:35,790] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$e5adf274] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:35,914] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,032] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,055] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,061] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,063] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:36,074] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:07:37,327] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:07:37,339] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:07:37,340] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:07:37,340] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:07:37,490] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:07:37,490] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 4056 ms
+[11-14 17:07:39,834] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:07:39,965] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:07:40,225] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:07:40,251] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:07:40,293] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:07:40,442] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 17:07:40,474] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 17:07:40,478] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 7.773 seconds (JVM running for 8.43)
+[11-14 17:08:11,837] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 17:08:11,837] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 17:08:11,845] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 7 ms
+[11-14 17:08:11,926] INFO [http-nio-8080-exec-1] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:08:12,265] INFO [http-nio-8080-exec-1] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:08:17,892] INFO [http-nio-8080-exec-1] EpollProvider[68] - Starting without optional epoll library
+[11-14 17:08:17,897] INFO [http-nio-8080-exec-1] KqueueProvider[70] - Starting without optional kqueue library
+[11-14 17:09:01,627] INFO [SpringContextShutdownHook] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 17:09:01,793] INFO [SpringContextShutdownHook] HikariDataSource[350] - HikariPool-1 - Shutdown initiated...
+[11-14 17:09:01,827] INFO [SpringContextShutdownHook] HikariDataSource[352] - HikariPool-1 - Shutdown completed.
+[11-14 17:22:52,283] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[11-14 17:22:52,291] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[11-14 17:22:52,295] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo, dubbo.application.organization=example, dubbo.application.owner=lvzhaoshuan, dubbo.consumer.check=false, dubbo.protocol.name=dubbo, dubbo.protocol.port=20880, dubbo.provider.timeout=60000, dubbo.provider.version=1.0.0.dev, dubbo.registry.address=127.0.0.1:2181, dubbo.registry.protocol=zookeeper}
+[11-14 17:22:52,446] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 1500 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:22:52,449] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:22:54,724] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[11-14 17:22:54,725] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[11-14 17:22:54,725] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+[11-14 17:22:54,725] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+[11-14 17:22:54,725] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ProtocolConfig#0, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+[11-14 17:22:54,725] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] has been registered.
+[11-14 17:22:54,726] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+[11-14 17:22:54,726] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+[11-14 17:22:54,726] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+[11-14 17:22:54,726] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+[11-14 17:22:54,851] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:22:54,855] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:22:54,893] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+[11-14 17:22:55,085] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:22:55,086] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:22:55,106] WARN [main] ServiceAnnotationBeanPostProcessor[265] -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:rpcDemoServiceImpl:com.example.demo.remote.service.RpcDemoService, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:22:55,107] INFO [main] ServiceAnnotationBeanPostProcessor[147] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'rpcDemoServiceImpl': Generic bean: class [com.example.demo.biz.service.impl.remote.RpcDemoServiceImpl]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\github\demo\demo-biz\target\classes\com\example\demo\biz\service\impl\remote\RpcDemoServiceImpl.class]] } were scanned under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:22:55,370] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$bb1e34d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,564] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,592] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,594] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,600] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,601] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,609] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,708] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$7485d19a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,722] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,724] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,726] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,729] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:55,733] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:22:57,569] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:22:57,588] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:22:57,589] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:22:57,589] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:22:57,791] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:22:57,791] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 5230 ms
+[11-14 17:23:01,713] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:23:02,099] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:23:02,393] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[11-14 17:23:02,400] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[11-14 17:23:02,409] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[11-14 17:23:02,427] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ProviderConfig#0] have been binding by prefix of configuration properties : dubbo.provider
+[11-14 17:23:02,442] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[11-14 17:23:03,149] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:23:03,210] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:23:03,284] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:23:03,440] INFO [main] AbstractConfig[121] -  [DUBBO] The service ready on spring started. service: com.example.demo.remote.service.RpcDemoService, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:03,580] INFO [main] AbstractConfig[532] -  [DUBBO] Export dubbo service com.example.demo.remote.service.RpcDemoService to local registry, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:03,580] INFO [main] AbstractConfig[491] -  [DUBBO] Export dubbo service com.example.demo.remote.service.RpcDemoService to url dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:03,580] INFO [main] AbstractConfig[501] -  [DUBBO] Register dubbo service com.example.demo.remote.service.RpcDemoService url dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&organization=example&owner=lvzhaoshuan&pid=1500&registry=zookeeper&timestamp=1573723383446, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:05,834] INFO [main] Server[100] -  [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:05,996] INFO [main] AbstractServer[65] -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.1.92:20880, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:06,241] INFO [main] CuratorFrameworkImpl[235] - Starting
+[11-14 17:23:06,258] INFO [main] ZooKeeper[100] - Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+[11-14 17:23:06,258] INFO [main] ZooKeeper[100] - Client environment:host.name=windows10.microdone.cn
+[11-14 17:23:06,259] INFO [main] ZooKeeper[100] - Client environment:java.version=1.8.0_151
+[11-14 17:23:06,259] INFO [main] ZooKeeper[100] - Client environment:java.vendor=Oracle Corporation
+[11-14 17:23:06,259] INFO [main] ZooKeeper[100] - Client environment:java.home=E:\codelife\Java8\jdk1.8.0_151\jre
+[11-14 17:23:06,259] INFO [main] ZooKeeper[100] - Client environment:java.class.path=E:\codelife\Java8\jdk1.8.0_151\jre\lib\charsets.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\deploy.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\access-bridge-64.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\cldrdata.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\dnsns.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\jaccess.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\jfxrt.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\localedata.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\nashorn.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunec.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunjce_provider.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunmscapi.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunpkcs11.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\zipfs.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\javaws.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jce.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jfr.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jfxswt.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jsse.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\management-agent.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\plugin.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\resources.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\rt.jar;E:\github\demo\demo-web\target\classes;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-web\2.2.1.RELEASE\spring-boot-starter-web-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter\2.2.1.RELEASE\spring-boot-starter-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot\2.2.1.RELEASE\spring-boot-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-autoconfigure\2.2.1.RELEASE\spring-boot-autoconfigure-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-logging\2.2.1.RELEASE\spring-boot-starter-logging-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\codelife\MyRepository\repo\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\codelife\MyRepository\repo\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;E:\codelife\MyRepository\repo\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;E:\codelife\MyRepository\repo\org\slf4j\jul-to-slf4j\1.7.29\jul-to-slf4j-1.7.29.jar;E:\codelife\MyRepository\repo\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-json\2.2.1.RELEASE\spring-boot-starter-json-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-databind\2.9.4\jackson-databind-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-core\2.9.4\jackson-core-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.4\jackson-datatype-jdk8-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.4\jackson-datatype-jsr310-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.4\jackson-module-parameter-names-2.9.4.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-validation\2.2.1.RELEASE\spring-boot-starter-validation-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\jakarta\validation\jakarta.validation-api\2.0.1\jakarta.validation-api-2.0.1.jar;E:\codelife\MyRepository\repo\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;E:\codelife\MyRepository\repo\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;E:\codelife\MyRepository\repo\org\springframework\spring-web\5.2.1.RELEASE\spring-web-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-beans\5.2.1.RELEASE\spring-beans-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-webmvc\5.2.1.RELEASE\spring-webmvc-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-aop\5.2.1.RELEASE\spring-aop-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-expression\5.2.1.RELEASE\spring-expression-5.2.1.RELEASE.jar;E:\github\demo\demo-biz\target\classes;E:\github\demo\demo-common\target\classes;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-data-redis\2.2.1.RELEASE\spring-boot-starter-data-redis-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-redis\2.2.1.RELEASE\spring-data-redis-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-keyvalue\2.2.1.RELEASE\spring-data-keyvalue-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-commons\2.2.1.RELEASE\spring-data-commons-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-tx\5.2.1.RELEASE\spring-tx-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-oxm\5.2.1.RELEASE\spring-oxm-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-context-support\5.2.1.RELEASE\spring-context-support-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\lettuce\lettuce-core\5.2.1.RELEASE\lettuce-core-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\netty\netty-common\4.1.43.Final\netty-common-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-buffer\4.1.43.Final\netty-buffer-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-codec\4.1.43.Final\netty-codec-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-transport\4.1.43.Final\netty-transport-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-resolver\4.1.43.Final\netty-resolver-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\projectreactor\reactor-core\3.3.0.RELEASE\reactor-core-3.3.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;E:\github\demo\demo-dao\target\classes;E:\codelife\MyRepository\repo\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;E:\codelife\MyRepository\repo\org\mybatis\spring\boot\mybatis-spring-boot-starter\1.3.2\mybatis-spring-boot-starter-1.3.2.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-jdbc\2.2.1.RELEASE\spring-boot-starter-jdbc-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\zaxxer\HikariCP\3.4.1\HikariCP-3.4.1.jar;E:\codelife\MyRepository\repo\org\springframework\spring-jdbc\5.2.1.RELEASE\spring-jdbc-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\1.3.2\mybatis-spring-boot-autoconfigure-1.3.2.jar;E:\codelife\MyRepository\repo\org\mybatis\mybatis\3.4.6\mybatis-3.4.6.jar;E:\codelife\MyRepository\repo\org\mybatis\mybatis-spring\1.3.2\mybatis-spring-1.3.2.jar;E:\codelife\MyRepository\repo\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;E:\github\demo\demo-remote\target\classes;E:\codelife\MyRepository\repo\org\springframework\spring-context\5.2.1.RELEASE\spring-context-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\alibaba\boot\dubbo-spring-boot-starter\0.2.0\dubbo-spring-boot-starter-0.2.0.jar;E:\codelife\MyRepository\repo\com\alibaba\dubbo\2.6.2\dubbo-2.6.2.jar;E:\codelife\MyRepository\repo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;E:\codelife\MyRepository\repo\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;E:\codelife\MyRepository\repo\org\apache\zookeeper\zookeeper\3.4.9\zookeeper-3.4.9.jar;E:\codelife\MyRepository\repo\jline\jline\0.9.94\jline-0.9.94.jar;E:\codelife\MyRepository\repo\io\netty\netty\3.10.5.Final\netty-3.10.5.Final.jar;E:\codelife\MyRepository\repo\org\apache\curator\curator-framework\2.12.0\curator-framework-2.12.0.jar;E:\codelife\MyRepository\repo\org\apache\curator\curator-client\2.12.0\curator-client-2.12.0.jar;E:\codelife\MyRepository\repo\com\alibaba\boot\dubbo-spring-boot-autoconfigure\0.2.0\dubbo-spring-boot-autoconfigure-0.2.0.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-tomcat\2.2.1.RELEASE\spring-boot-starter-tomcat-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-core\9.0.27\tomcat-embed-core-9.0.27.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-el\9.0.27\tomcat-embed-el-9.0.27.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.27\tomcat-embed-websocket-9.0.27.jar;E:\codelife\MyRepository\repo\net\bytebuddy\byte-buddy\1.10.2\byte-buddy-1.10.2.jar;E:\codelife\MyRepository\repo\org\springframework\spring-core\5.2.1.RELEASE\spring-core-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-jcl\5.2.1.RELEASE\spring-jcl-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger2\2.8.0\springfox-swagger2-2.8.0.jar;E:\codelife\MyRepository\repo\io\swagger\swagger-annotations\1.5.14\swagger-annotations-1.5.14.jar;E:\codelife\MyRepository\repo\io\swagger\swagger-models\1.5.14\swagger-models-1.5.14.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-spi\2.8.0\springfox-spi-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-core\2.8.0\springfox-core-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-schema\2.8.0\springfox-schema-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger-common\2.8.0\springfox-swagger-common-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-spring-web\2.8.0\springfox-spring-web-2.8.0.jar;E:\codelife\MyRepository\repo\org\reflections\reflections\0.9.11\reflections-0.9.11.jar;E:\codelife\MyRepository\repo\com\google\guava\guava\20.0\guava-20.0.jar;E:\codelife\MyRepository\repo\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;E:\codelife\MyRepository\repo\org\slf4j\slf4j-api\1.7.29\slf4j-api-1.7.29.jar;E:\codelife\MyRepository\repo\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger-ui\2.8.0\springfox-swagger-ui-2.8.0.jar;E:\codelife\MyRepository\repo\net\bull\javamelody\javamelody-spring-boot-starter\1.74.0\javamelody-spring-boot-starter-1.74.0.jar;E:\codelife\MyRepository\repo\net\bull\javamelody\javamelody-core\1.74.0\javamelody-core-1.74.0.jar;E:\codelife\MyRepository\repo\org\jrobin\jrobin\1.5.9\jrobin-1.5.9.jar;E:\codelife\idea\ideaIU-2019.1.3.win\lib\idea_rt.jar;E:\codelife\idea\ideaIU-2019.1.3.win\lib\rt\debugger-agent.jar
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:java.library.path=E:\codelife\Java8\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\codelife\XShell\;D:\Applications\Python36\Scripts\;D:\Applications\Python36\;D:\Applications\Python37\Scripts\;D:\Applications\Python37\;E:\codelife\Java8\jdk1.8.0_151\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\codelife\apache-maven-3.5.4\bin;E:\codelife\mysql-5.7.23-winx64\bin;％ZOOKEEPER_HOME％\bin;%;ADOOP_HOME%\bin;E:\codelife\Git\Git\bin;E:\codelife\ES\elasticsearch-5.5.3\bin;E:\codelife\nodejs\;E:\codelife\Gradle\gradle-4.10.3\bin;C:\Users\16561\AppData\Local\Microsoft\WindowsApps;C:\Users\16561\AppData\Roaming\npm;E:\OpenVPN\bin;C:\Users\16561\AppData\Local\BypassRuntm;.
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:java.io.tmpdir=C:\Users\16561\AppData\Local\Temp\
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:java.compiler=<NA>
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:os.name=Windows 10
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:os.arch=amd64
+[11-14 17:23:06,260] INFO [main] ZooKeeper[100] - Client environment:os.version=10.0
+[11-14 17:23:06,261] INFO [main] ZooKeeper[100] - Client environment:user.name=16561
+[11-14 17:23:06,261] INFO [main] ZooKeeper[100] - Client environment:user.home=C:\Users\16561
+[11-14 17:23:06,261] INFO [main] ZooKeeper[100] - Client environment:user.dir=E:\github\demo
+[11-14 17:23:06,263] INFO [main] ZooKeeper[438] - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7381d6f0
+[11-14 17:23:06,293] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:06,296] INFO [main] ZookeeperRegistry[273] -  [DUBBO] Register: dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:07,392] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:08,496] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:09,498] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:10,600] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:11,342] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (5095)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:11,604] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:12,706] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:13,708] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:14,808] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:15,809] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:16,911] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:17,350] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (11106)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:17,916] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:19,018] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:20,019] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:21,121] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:22,123] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:22,355] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (16112)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:23,224] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:24,227] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:25,329] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:26,331] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:27,434] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:28,367] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (22123)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:28,437] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:29,539] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:30,541] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:31,642] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:32,644] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:33,380] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (27136)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:33,745] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:34,748] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:35,850] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:36,853] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:37,954] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:38,958] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:39,388] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (33145)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:237)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:226)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:223)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:216)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:175)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:32)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.checkExists(CuratorZookeeperClient.java:117)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:58)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:40,059] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:41,062] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:42,163] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:43,166] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:44,266] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:44,407] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (38164)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:740)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:723)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:720)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:484)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:474)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:454)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:45,270] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:46,371] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:47,372] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:48,474] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:49,476] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:50,417] ERROR [main] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (44173)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:740)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:723)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:720)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:484)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:474)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:454)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+[11-14 17:23:50,425] INFO [main] StandardService[173] - Stopping service [Tomcat]
+[11-14 17:23:50,457] INFO [main] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:23:50,577] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:50,790] INFO [main] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:23:50,930] WARN [main] WebappClassLoaderBase[173] - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+[11-14 17:23:50,931] WARN [main] WebappClassLoaderBase[173] - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Long.toString(Long.java:397)
+ java.lang.String.valueOf(String.java:3113)
+ com.mysql.cj.result.StringValueFactory.createFromLong(StringValueFactory.java:99)
+ com.mysql.cj.result.StringValueFactory.createFromLong(StringValueFactory.java:47)
+ com.mysql.cj.protocol.a.MysqlTextValueDecoder.decodeInt8(MysqlTextValueDecoder.java:115)
+ com.mysql.cj.protocol.result.AbstractResultsetRow.decodeAndCreateReturnValue(AbstractResultsetRow.java:111)
+ com.mysql.cj.protocol.result.AbstractResultsetRow.getValueFromBytes(AbstractResultsetRow.java:241)
+ com.mysql.cj.protocol.a.result.ByteArrayRow.getValue(ByteArrayRow.java:91)
+ com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1014)
+ com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1406)
+ com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399)
+ com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:394)
+ com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:355)
+ com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+ com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+ com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:727)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:713)
+ java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+ java.util.concurrent.FutureTask.run(FutureTask.java)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+[11-14 17:23:50,950] INFO [main] ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[11-14 17:23:51,019] ERROR [main] SpringApplication[826] - Application run failed
+java.lang.IllegalStateException: Failed to register dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to registry 127.0.0.1:2181, cause: Failed to register dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to zookeeper zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, cause: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:144)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.example.demo.web.DemoWebApplication.main(DemoWebApplication.java:20)
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to register dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to zookeeper zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, cause: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 28 common frames omitted
+Caused by: org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:740)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$11.call(CreateBuilderImpl.java:723)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:720)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:484)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:474)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:454)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:44)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 33 common frames omitted
+[11-14 17:23:51,025] INFO [main] ThreadPoolTaskExecutor[208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[11-14 17:23:51,057] INFO [main] HikariDataSource[350] - HikariPool-1 - Shutdown initiated...
+[11-14 17:23:51,076] INFO [main] HikariDataSource[352] - HikariPool-1 - Shutdown completed.
+[11-14 17:23:51,077] INFO [main] ReferenceAnnotationBeanPostProcessor[251] - class com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[11-14 17:23:51,581] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:52,057] INFO [DubboShutdownHook] AbstractConfig[81] -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:52,058] INFO [DubboShutdownHook] AbstractRegistryFactory[64] -  [DUBBO] Close all registries [zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:52,058] INFO [DubboShutdownHook] ZookeeperRegistry[451] -  [DUBBO] Destroy registry:zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:52,058] INFO [DubboShutdownHook] ZookeeperRegistry[284] -  [DUBBO] Unregister: dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:23:52,681] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:53,683] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:54,786] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:55,790] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:56,892] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:57,074] ERROR [DubboShutdownHook] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (50831)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:250)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:244)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.pathInForeground(DeleteBuilderImpl.java:241)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:225)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:35)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.delete(CuratorZookeeperClient.java:96)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:123)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:161)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:458)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.destroy(FailbackRegistry.java:437)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.destroy(ZookeeperRegistry.java:103)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:71)
+	at com.alibaba.dubbo.config.ProtocolConfig.destroyAll(ProtocolConfig.java:158)
+	at com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+[11-14 17:23:57,895] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:23:58,996] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:23:59,999] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:24:01,100] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:24:02,103] WARN [main-SendThread(127.0.0.1:2181)] ClientCnxn[1162] - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+[11-14 17:24:03,086] ERROR [DubboShutdownHook] ConnectionState[228] - Connection timed out for connection string (127.0.0.1:2181) and timeout (5000) / elapsed (56843)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:250)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:244)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.pathInForeground(DeleteBuilderImpl.java:241)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:225)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:35)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.delete(CuratorZookeeperClient.java:96)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:123)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:161)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:458)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.destroy(FailbackRegistry.java:437)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.destroy(ZookeeperRegistry.java:103)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:71)
+	at com.alibaba.dubbo.config.ProtocolConfig.destroyAll(ProtocolConfig.java:158)
+	at com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+[11-14 17:24:03,088] WARN [DubboShutdownHook] ZookeeperRegistry[463] -  [DUBBO] Failed to unregister url dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to registry zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446 on destroy, cause: Failed to unregister dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to registry 127.0.0.1:2181, cause: Failed to unregister dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to zookeeper zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, cause: KeeperErrorCode = ConnectionLoss, dubbo version: 2.6.2, current host: 192.168.1.92
+java.lang.IllegalStateException: Failed to unregister dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to registry 127.0.0.1:2181, cause: Failed to unregister dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to zookeeper zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, cause: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:174)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:458)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.destroy(FailbackRegistry.java:437)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.destroy(ZookeeperRegistry.java:103)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:71)
+	at com.alibaba.dubbo.config.ProtocolConfig.destroyAll(ProtocolConfig.java:158)
+	at com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:83)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to unregister dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451 to zookeeper zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&organization=example&owner=lvzhaoshuan&pid=1500&timestamp=1573723383446, cause: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:125)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.unregister(FailbackRegistry.java:161)
+	... 7 common frames omitted
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.delete(CuratorZookeeperClient.java:99)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doUnregister(ZookeeperRegistry.java:123)
+	... 8 common frames omitted
+Caused by: org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:225)
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:94)
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:117)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:489)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:250)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl$5.call(DeleteBuilderImpl.java:244)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:109)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.pathInForeground(DeleteBuilderImpl.java:241)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:225)
+	at org.apache.curator.framework.imps.DeleteBuilderImpl.forPath(DeleteBuilderImpl.java:35)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.delete(CuratorZookeeperClient.java:96)
+	... 9 common frames omitted
+[11-14 17:24:03,090] INFO [Curator-Framework-0] CuratorFrameworkImpl[821] - backgroundOperationsLoop exiting
+[11-14 17:24:03,205] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:24:04,311] INFO [DubboShutdownHook] ZooKeeper[684] - Session: 0x0 closed
+[11-14 17:24:04,311] INFO [main-EventThread] ClientCnxn[519] - EventThread shut down for session: 0x0
+[11-14 17:24:04,312] INFO [DubboShutdownHook] DubboProtocol[424] -  [DUBBO] Close dubbo server: /192.168.1.92:20880, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:04,315] INFO [DubboShutdownHook] AbstractServer[145] -  [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.1.92:20880, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:04,321] INFO [DubboShutdownHook] DubboProtocol[76] -  [DUBBO] Unexport service: dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:04,321] INFO [DubboShutdownHook] InjvmProtocol[76] -  [DUBBO] Unexport service: injvm://127.0.0.1/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=1500&side=provider&timestamp=1573723383451, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:49,271] INFO [main] LoggerFactory[?] - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[11-14 17:24:49,276] INFO [main] WelcomeLogoApplicationListener[53] - 
+
+ :: Dubbo Spring Boot (v0.2.0) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.6.2) : https://github.com/apache/incubator-dubbo
+ :: Google group : dev@dubbo.incubator.apache.org
+
+[11-14 17:24:49,280] INFO [main] OverrideDubboConfigApplicationListener[68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=demo, dubbo.application.organization=example, dubbo.application.owner=lvzhaoshuan, dubbo.consumer.check=false, dubbo.protocol.name=dubbo, dubbo.protocol.port=20880, dubbo.provider.timeout=60000, dubbo.provider.version=1.0.0.dev, dubbo.registry.address=127.0.0.1:2181, dubbo.registry.protocol=zookeeper}
+[11-14 17:24:49,389] INFO [main] DemoWebApplication[55] - Starting DemoWebApplication on LAPTOP-C66GIPPV with PID 11500 (E:\github\demo\demo-web\target\classes started by 16561 in E:\github\demo)
+[11-14 17:24:49,390] INFO [main] DemoWebApplication[651] - No active profile set, falling back to default profiles: default
+[11-14 17:24:50,833] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ApplicationConfig#0, class : com.alibaba.dubbo.config.ApplicationConfig] has been registered.
+[11-14 17:24:50,835] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] has been registered.
+[11-14 17:24:50,835] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.RegistryConfig#0, class : com.alibaba.dubbo.config.RegistryConfig] has been registered.
+[11-14 17:24:50,836] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.RegistryConfig#0] has been registered.
+[11-14 17:24:50,836] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ProtocolConfig#0, class : com.alibaba.dubbo.config.ProtocolConfig] has been registered.
+[11-14 17:24:50,836] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] has been registered.
+[11-14 17:24:50,836] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ProviderConfig#0, class : com.alibaba.dubbo.config.ProviderConfig] has been registered.
+[11-14 17:24:50,837] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ProviderConfig#0] has been registered.
+[11-14 17:24:50,837] INFO [main] DubboConfigBindingRegistrar[121] - The dubbo config bean definition [name : com.alibaba.dubbo.config.ConsumerConfig#0, class : com.alibaba.dubbo.config.ConsumerConfig] has been registered.
+[11-14 17:24:50,837] INFO [main] DubboConfigBindingRegistrar[145] - The BeanPostProcessor bean definition [com.alibaba.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] has been registered.
+[11-14 17:24:50,943] INFO [main] RepositoryConfigurationDelegate[246] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11-14 17:24:50,946] INFO [main] RepositoryConfigurationDelegate[126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[11-14 17:24:50,974] INFO [main] RepositoryConfigurationDelegate[184] - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[11-14 17:24:51,097] INFO [main] ServiceAnnotationBeanPostProcessor[190] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:51,097] INFO [main] ServiceAnnotationBeanPostProcessor[192] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:51,115] WARN [main] ServiceAnnotationBeanPostProcessor[265] -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:rpcDemoServiceImpl:com.example.demo.remote.service.RpcDemoService, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:51,116] INFO [main] ServiceAnnotationBeanPostProcessor[147] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'rpcDemoServiceImpl': Generic bean: class [com.example.demo.biz.service.impl.remote.RpcDemoServiceImpl]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\github\demo\demo-biz\target\classes\com\example\demo\biz\service\impl\remote\RpcDemoServiceImpl.class]] } were scanned under package[com.example.demo.biz.service.impl.remote], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:51,333] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'net.bull.javamelody.JavaMelodyAutoConfiguration' of type [net.bull.javamelody.JavaMelodyAutoConfiguration$$EnhancerBySpringCGLIB$$8b6b20b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,476] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,497] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,498] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringServiceAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,498] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,499] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringRestControllerAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,507] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'monitoringSpringAsyncAdvisor' of type [net.bull.javamelody.MonitoringSpringAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,596] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration' of type [com.alibaba.boot.dubbo.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$44d2bd7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,605] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,608] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,611] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,613] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:51,615] INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker[330] - Bean 'relaxedDubboConfigBinder' of type [com.alibaba.boot.dubbo.autoconfigure.RelaxedDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11-14 17:24:52,903] INFO [main] TomcatWebServer[92] - Tomcat initialized with port(s): 8080 (http)
+[11-14 17:24:52,916] INFO [main] Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8080"]
+[11-14 17:24:52,917] INFO [main] StandardService[173] - Starting service [Tomcat]
+[11-14 17:24:52,917] INFO [main] StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[11-14 17:24:53,054] INFO [main] [/][173] - Initializing Spring embedded WebApplicationContext
+[11-14 17:24:53,054] INFO [main] ContextLoader[284] - Root WebApplicationContext: initialization completed in 3592 ms
+[11-14 17:24:55,826] INFO [main] PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[11-14 17:24:56,084] INFO [main] ThreadPoolTaskExecutor[171] - Initializing ExecutorService 'applicationTaskExecutor'
+[11-14 17:24:56,296] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+[11-14 17:24:56,302] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[11-14 17:24:56,310] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[11-14 17:24:56,325] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ProviderConfig#0] have been binding by prefix of configuration properties : dubbo.provider
+[11-14 17:24:56,336] INFO [main] DubboConfigBindingBeanPostProcessor[85] - The properties of bean [name : com.alibaba.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[11-14 17:24:56,805] INFO [main] DocumentationPluginsBootstrapper[151] - Context refreshed
+[11-14 17:24:56,830] INFO [main] DocumentationPluginsBootstrapper[154] - Found 1 custom documentation plugin(s)
+[11-14 17:24:56,871] INFO [main] ApiListingReferenceScanner[41] - Scanning for api listing references
+[11-14 17:24:56,982] INFO [main] AbstractConfig[121] -  [DUBBO] The service ready on spring started. service: com.example.demo.remote.service.RpcDemoService, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:57,084] INFO [main] AbstractConfig[532] -  [DUBBO] Export dubbo service com.example.demo.remote.service.RpcDemoService to local registry, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:57,084] INFO [main] AbstractConfig[491] -  [DUBBO] Export dubbo service com.example.demo.remote.service.RpcDemoService to url dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:57,084] INFO [main] AbstractConfig[501] -  [DUBBO] Register dubbo service com.example.demo.remote.service.RpcDemoService url dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&bind.ip=192.168.1.92&bind.port=20880&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=demo&dubbo=2.6.2&organization=example&owner=lvzhaoshuan&pid=11500&registry=zookeeper&timestamp=1573723496987, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:58,690] INFO [main] Server[100] -  [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:58,800] INFO [main] AbstractServer[65] -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.1.92:20880, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:58,879] INFO [main] CuratorFrameworkImpl[235] - Starting
+[11-14 17:24:58,887] INFO [main] ZooKeeper[100] - Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+[11-14 17:24:58,888] INFO [main] ZooKeeper[100] - Client environment:host.name=windows10.microdone.cn
+[11-14 17:24:58,888] INFO [main] ZooKeeper[100] - Client environment:java.version=1.8.0_151
+[11-14 17:24:58,888] INFO [main] ZooKeeper[100] - Client environment:java.vendor=Oracle Corporation
+[11-14 17:24:58,888] INFO [main] ZooKeeper[100] - Client environment:java.home=E:\codelife\Java8\jdk1.8.0_151\jre
+[11-14 17:24:58,888] INFO [main] ZooKeeper[100] - Client environment:java.class.path=E:\codelife\Java8\jdk1.8.0_151\jre\lib\charsets.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\deploy.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\access-bridge-64.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\cldrdata.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\dnsns.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\jaccess.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\jfxrt.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\localedata.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\nashorn.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunec.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunjce_provider.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunmscapi.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\sunpkcs11.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\ext\zipfs.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\javaws.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jce.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jfr.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jfxswt.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\jsse.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\management-agent.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\plugin.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\resources.jar;E:\codelife\Java8\jdk1.8.0_151\jre\lib\rt.jar;E:\github\demo\demo-web\target\classes;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-web\2.2.1.RELEASE\spring-boot-starter-web-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter\2.2.1.RELEASE\spring-boot-starter-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot\2.2.1.RELEASE\spring-boot-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-autoconfigure\2.2.1.RELEASE\spring-boot-autoconfigure-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-logging\2.2.1.RELEASE\spring-boot-starter-logging-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\codelife\MyRepository\repo\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\codelife\MyRepository\repo\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;E:\codelife\MyRepository\repo\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;E:\codelife\MyRepository\repo\org\slf4j\jul-to-slf4j\1.7.29\jul-to-slf4j-1.7.29.jar;E:\codelife\MyRepository\repo\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-json\2.2.1.RELEASE\spring-boot-starter-json-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-databind\2.9.4\jackson-databind-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-core\2.9.4\jackson-core-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.4\jackson-datatype-jdk8-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.4\jackson-datatype-jsr310-2.9.4.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.4\jackson-module-parameter-names-2.9.4.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-validation\2.2.1.RELEASE\spring-boot-starter-validation-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\jakarta\validation\jakarta.validation-api\2.0.1\jakarta.validation-api-2.0.1.jar;E:\codelife\MyRepository\repo\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;E:\codelife\MyRepository\repo\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;E:\codelife\MyRepository\repo\org\springframework\spring-web\5.2.1.RELEASE\spring-web-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-beans\5.2.1.RELEASE\spring-beans-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-webmvc\5.2.1.RELEASE\spring-webmvc-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-aop\5.2.1.RELEASE\spring-aop-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-expression\5.2.1.RELEASE\spring-expression-5.2.1.RELEASE.jar;E:\github\demo\demo-biz\target\classes;E:\github\demo\demo-common\target\classes;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-data-redis\2.2.1.RELEASE\spring-boot-starter-data-redis-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-redis\2.2.1.RELEASE\spring-data-redis-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-keyvalue\2.2.1.RELEASE\spring-data-keyvalue-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\data\spring-data-commons\2.2.1.RELEASE\spring-data-commons-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-tx\5.2.1.RELEASE\spring-tx-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-oxm\5.2.1.RELEASE\spring-oxm-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-context-support\5.2.1.RELEASE\spring-context-support-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\lettuce\lettuce-core\5.2.1.RELEASE\lettuce-core-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\netty\netty-common\4.1.43.Final\netty-common-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-buffer\4.1.43.Final\netty-buffer-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-codec\4.1.43.Final\netty-codec-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-transport\4.1.43.Final\netty-transport-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\netty\netty-resolver\4.1.43.Final\netty-resolver-4.1.43.Final.jar;E:\codelife\MyRepository\repo\io\projectreactor\reactor-core\3.3.0.RELEASE\reactor-core-3.3.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;E:\github\demo\demo-dao\target\classes;E:\codelife\MyRepository\repo\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;E:\codelife\MyRepository\repo\org\mybatis\spring\boot\mybatis-spring-boot-starter\1.3.2\mybatis-spring-boot-starter-1.3.2.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-jdbc\2.2.1.RELEASE\spring-boot-starter-jdbc-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\zaxxer\HikariCP\3.4.1\HikariCP-3.4.1.jar;E:\codelife\MyRepository\repo\org\springframework\spring-jdbc\5.2.1.RELEASE\spring-jdbc-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\1.3.2\mybatis-spring-boot-autoconfigure-1.3.2.jar;E:\codelife\MyRepository\repo\org\mybatis\mybatis\3.4.6\mybatis-3.4.6.jar;E:\codelife\MyRepository\repo\org\mybatis\mybatis-spring\1.3.2\mybatis-spring-1.3.2.jar;E:\codelife\MyRepository\repo\org\projectlombok\lombok\1.16.22\lombok-1.16.22.jar;E:\github\demo\demo-remote\target\classes;E:\codelife\MyRepository\repo\org\springframework\spring-context\5.2.1.RELEASE\spring-context-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\com\alibaba\boot\dubbo-spring-boot-starter\0.2.0\dubbo-spring-boot-starter-0.2.0.jar;E:\codelife\MyRepository\repo\com\alibaba\dubbo\2.6.2\dubbo-2.6.2.jar;E:\codelife\MyRepository\repo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;E:\codelife\MyRepository\repo\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;E:\codelife\MyRepository\repo\org\apache\zookeeper\zookeeper\3.4.9\zookeeper-3.4.9.jar;E:\codelife\MyRepository\repo\jline\jline\0.9.94\jline-0.9.94.jar;E:\codelife\MyRepository\repo\io\netty\netty\3.10.5.Final\netty-3.10.5.Final.jar;E:\codelife\MyRepository\repo\org\apache\curator\curator-framework\2.12.0\curator-framework-2.12.0.jar;E:\codelife\MyRepository\repo\org\apache\curator\curator-client\2.12.0\curator-client-2.12.0.jar;E:\codelife\MyRepository\repo\com\alibaba\boot\dubbo-spring-boot-autoconfigure\0.2.0\dubbo-spring-boot-autoconfigure-0.2.0.jar;E:\codelife\MyRepository\repo\org\springframework\boot\spring-boot-starter-tomcat\2.2.1.RELEASE\spring-boot-starter-tomcat-2.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-core\9.0.27\tomcat-embed-core-9.0.27.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-el\9.0.27\tomcat-embed-el-9.0.27.jar;E:\codelife\MyRepository\repo\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.27\tomcat-embed-websocket-9.0.27.jar;E:\codelife\MyRepository\repo\net\bytebuddy\byte-buddy\1.10.2\byte-buddy-1.10.2.jar;E:\codelife\MyRepository\repo\org\springframework\spring-core\5.2.1.RELEASE\spring-core-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\spring-jcl\5.2.1.RELEASE\spring-jcl-5.2.1.RELEASE.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger2\2.8.0\springfox-swagger2-2.8.0.jar;E:\codelife\MyRepository\repo\io\swagger\swagger-annotations\1.5.14\swagger-annotations-1.5.14.jar;E:\codelife\MyRepository\repo\io\swagger\swagger-models\1.5.14\swagger-models-1.5.14.jar;E:\codelife\MyRepository\repo\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-spi\2.8.0\springfox-spi-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-core\2.8.0\springfox-core-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-schema\2.8.0\springfox-schema-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger-common\2.8.0\springfox-swagger-common-2.8.0.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-spring-web\2.8.0\springfox-spring-web-2.8.0.jar;E:\codelife\MyRepository\repo\org\reflections\reflections\0.9.11\reflections-0.9.11.jar;E:\codelife\MyRepository\repo\com\google\guava\guava\20.0\guava-20.0.jar;E:\codelife\MyRepository\repo\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;E:\codelife\MyRepository\repo\org\slf4j\slf4j-api\1.7.29\slf4j-api-1.7.29.jar;E:\codelife\MyRepository\repo\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;E:\codelife\MyRepository\repo\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;E:\codelife\MyRepository\repo\io\springfox\springfox-swagger-ui\2.8.0\springfox-swagger-ui-2.8.0.jar;E:\codelife\MyRepository\repo\net\bull\javamelody\javamelody-spring-boot-starter\1.74.0\javamelody-spring-boot-starter-1.74.0.jar;E:\codelife\MyRepository\repo\net\bull\javamelody\javamelody-core\1.74.0\javamelody-core-1.74.0.jar;E:\codelife\MyRepository\repo\org\jrobin\jrobin\1.5.9\jrobin-1.5.9.jar;E:\codelife\idea\ideaIU-2019.1.3.win\lib\idea_rt.jar;E:\codelife\idea\ideaIU-2019.1.3.win\lib\rt\debugger-agent.jar
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:java.library.path=E:\codelife\Java8\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\codelife\XShell\;D:\Applications\Python36\Scripts\;D:\Applications\Python36\;D:\Applications\Python37\Scripts\;D:\Applications\Python37\;E:\codelife\Java8\jdk1.8.0_151\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\codelife\apache-maven-3.5.4\bin;E:\codelife\mysql-5.7.23-winx64\bin;％ZOOKEEPER_HOME％\bin;%;ADOOP_HOME%\bin;E:\codelife\Git\Git\bin;E:\codelife\ES\elasticsearch-5.5.3\bin;E:\codelife\nodejs\;E:\codelife\Gradle\gradle-4.10.3\bin;C:\Users\16561\AppData\Local\Microsoft\WindowsApps;C:\Users\16561\AppData\Roaming\npm;E:\OpenVPN\bin;C:\Users\16561\AppData\Local\BypassRuntm;.
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:java.io.tmpdir=C:\Users\16561\AppData\Local\Temp\
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:java.compiler=<NA>
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:os.name=Windows 10
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:os.arch=amd64
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:os.version=10.0
+[11-14 17:24:58,889] INFO [main] ZooKeeper[100] - Client environment:user.name=16561
+[11-14 17:24:58,890] INFO [main] ZooKeeper[100] - Client environment:user.home=C:\Users\16561
+[11-14 17:24:58,890] INFO [main] ZooKeeper[100] - Client environment:user.dir=E:\github\demo
+[11-14 17:24:58,892] INFO [main] ZooKeeper[438] - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7d551ec6
+[11-14 17:24:58,910] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1032] - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[11-14 17:24:58,912] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[876] - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[11-14 17:24:58,919] INFO [main] ZookeeperRegistry[273] -  [DUBBO] Register: dubbo://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:59,048] INFO [main-SendThread(127.0.0.1:2181)] ClientCnxn[1299] - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x16e693a7bad0000, negotiated timeout = 40000
+[11-14 17:24:59,070] INFO [main-EventThread] ConnectionStateManager[228] - State change: CONNECTED
+[11-14 17:24:59,137] INFO [main] ZookeeperRegistry[298] -  [DUBBO] Subscribe: provider://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&category=configurators&check=false&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989, dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:59,161] INFO [main] ZookeeperRegistry[387] -  [DUBBO] Notify urls for subscribe url provider://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&category=configurators&check=false&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989, urls: [empty://192.168.1.92:20880/com.example.demo.remote.service.RpcDemoService?anyhost=true&application=demo&category=configurators&check=false&default.timeout=60000&default.version=1.0.0.dev&dubbo=2.6.2&generic=false&interface=com.example.demo.remote.service.RpcDemoService&methods=test&organization=example&owner=lvzhaoshuan&pid=11500&side=provider&timestamp=1573723496989], dubbo version: 2.6.2, current host: 192.168.1.92
+[11-14 17:24:59,190] INFO [main] Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8080"]
+[11-14 17:24:59,212] INFO [main] TomcatWebServer[204] - Tomcat started on port(s): 8080 (http) with context path ''
+[11-14 17:24:59,217] INFO [main] DemoWebApplication[61] - Started DemoWebApplication in 10.457 seconds (JVM running for 11.174)
+[11-14 17:34:54,399] INFO [javamelody] HikariDataSource[110] - HikariPool-1 - Starting...
+[11-14 17:34:54,605] INFO [javamelody] HikariDataSource[123] - HikariPool-1 - Start completed.
+[11-14 17:58:14,422] INFO [http-nio-8080-exec-1] [/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11-14 17:58:14,936] INFO [http-nio-8080-exec-1] DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+[11-14 17:58:17,151] INFO [http-nio-8080-exec-1] DispatcherServlet[547] - Completed initialization in 2214 ms
+[11-14 18:01:14,809] INFO [http-nio-8080-exec-2] EpollProvider[68] - Starting without optional epoll library
+[11-14 18:01:14,819] INFO [http-nio-8080-exec-2] KqueueProvider[70] - Starting without optional kqueue library
